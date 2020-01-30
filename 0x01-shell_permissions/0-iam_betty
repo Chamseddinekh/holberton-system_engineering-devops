@@ -1,2 +1,2 @@
 #!/bin/bash
-uermod -u betty
+su betty
