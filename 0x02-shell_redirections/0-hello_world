@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e "Hello/nWord"
+echo -e "Hello,Word/n"
