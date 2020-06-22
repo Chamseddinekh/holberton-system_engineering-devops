@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # displays To infinity and beyond indefinitely
 sudo touch /var/run/holbertonscript.pid
-echo $$ > /var/run/holbertonscript.pid
+sudo echo $$ > /var/run/holbertonscript.pid
 trap "echo I hate the kill command" SIGTERM
 trap "echo Y U no love me?!" SIGINT
-trap "rm -r /var/run/holbertonscript.pid" SIGQUIT
+trap "sudo rm -r /var/run/holbertonscript.pid" SIGQUIT
 while :
 do
 	echo "To infinity and beyond"
