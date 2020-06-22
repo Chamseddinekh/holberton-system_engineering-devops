@@ -3,7 +3,7 @@
 file='/var/run/holbertonscript.pid'
 sudo touch $file
 echo $$ > $file
-trap "echo I hate the kill command" SIGTERM
+trap "echo 'I hate the kill command'; sudo rm $file" SIGTERM
 trap "echo Y U no love me?!" SIGINT
 trap "sudo rm $file" SIGQUIT
 while :
