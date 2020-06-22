@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # displays the PID
-ps -auxf | grep "bash"
+pgrep -l 'bash'
+
