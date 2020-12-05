@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Basic while loop
+for i in *;
+do
+    echo $i
+done
