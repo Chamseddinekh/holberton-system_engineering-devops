@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Basic while loop
+i=0
+j=0
+while [ $i -le 12 ];
+do
+   echo "Hour: $i"
+   while [ $j -le 59 ];
+   do
+    echo "$j"
+    let "j++"
+   done
+   j=0
+   let "i++"
+done
