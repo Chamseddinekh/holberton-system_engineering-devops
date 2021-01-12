@@ -1,8 +1,4 @@
 # Execute command
-exec { 'connect':
-command  => 'ssh',
-Host                 => 'ubuntu'
-Port                 => '22'
-HostName             => '34.75.202.246'
-PubkeyAuthentication => 'no'
+exec {'echo "PasswordAuthentication no\nIdentityFile ~/.ssh/holberton" >> /etc/ssh/ssh_config':
+path    => '/bin',
 }
